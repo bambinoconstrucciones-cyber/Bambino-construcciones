@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda | Bambino Construcciones</title>
+    <meta name="description" content="Tienda online de herramientas para obra, hogar y mantenimiento." />
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html">
+        <img class="brand__mark" src="images/logo.png" alt="Bambino Construcciones" />
+        <span>Bambino Construcciones</span>
+      </a>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="index.html#inicio">Inicio</a>
+        <a href="gallery.html">Galería</a>
+        <a href="shop.html">Tienda</a>
+      </nav>
+    </header>
+
+    <main class="shop-page">
+      <section class="shop-hero">
+        <div class="shop-hero__copy">
+          <p class="eyebrow">Tienda de herramientas</p>
+          <h2>Herramientas para obra, hogar y mantenimiento.</h2>
+          <p>
+            Encontrá productos seleccionados para cada trabajo, con la misma calidad y confianza que caracteriza a Bambino Construcciones.
+          </p>
+          <p>
+          </p>
+        </div>
+        <div class="shop-hero__card">
+          <h3>Envío directo por WhatsApp</h3>
+          <p>Agregá productos al carrito y finalizá tu compra con un resumen listo para enviar.</p>
+        </div>
+      </section>
+
+      <section class="shop-layout">
+        <div class="products-panel">
+          <div class="section__header section__header--row">
+            <div>
+              <p class="eyebrow">Productos destacados</p>
+              <h3>Herramientas y accesorios</h3>
+            </div>
+            <div class="product-filters" aria-label="Filtros de productos">
+              <label class="product-filter">
+                <span>Etiqueta</span>
+                <select id="categoryFilter" aria-label="Filtrar por etiqueta">
+                  <option value="all">Todas</option>
+                  <option value="Herramientas">Herramientas</option>
+                  <option value="Planos">Planos</option>
+                  <option value="Muebles">Muebles</option>
+                </select>
+              </label>
+              <label class="product-filter">
+                <span>Ordenar por</span>
+                <select id="priceSort" aria-label="Ordenar productos por precio">
+                  <option value="featured">Recomendados</option>
+                  <option value="price-asc">Precio: menor a mayor</option>
+                </select>
+              </label>
+            </div>
+          </div>
+          <div class="products-grid" id="productsGrid"></div>
+        </div>
+
+        <aside class="cart-panel">
+          <div class="cart-panel__header">
+            <h3>Carrito</h3>
+            <span class="cart-badge" id="cartCount">0</span>
+          </div>
+          <div class="cart-items" id="cartItems"></div>
+          <div class="cart-summary">
+            <div class="cart-summary__row">
+              <span>Subtotal</span>
+              <strong id="cartSubtotal">$0</strong>
+            </div>
+            <div class="cart-summary__row">
+              <span>Envío</span>
+              <strong>Consultar</strong>
+            </div>
+            <button class="button button--primary button--full" id="checkoutButton">Finalizar compra</button>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <div class="product-modal" id="productModal" hidden>
+      <div class="product-modal__content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button class="modal__close" id="closeModal" aria-label="Cerrar producto">×</button>
+        <img id="modalImage" src="" alt="" />
+        <div class="product-modal__body">
+          <p class="eyebrow">Detalle del producto</p>
+          <h3 id="modalTitle"></h3>
+          <p id="modalPrice" class="product-modal__price"></p>
+          <p id="modalDescription"></p>
+          <ul id="modalFeatures" class="product-modal__features"></ul>
+          <div class="product-modal__actions">
+            <label class="quantity-control" for="modalQuantity">
+              Cantidad
+              <input id="modalQuantity" type="number" min="1" value="1" />
+            </label>
+            <button class="button button--primary" id="addToCartButton">Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="shop.js"></script>
+  </body>
+</html>

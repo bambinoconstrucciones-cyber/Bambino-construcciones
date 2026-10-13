@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bambino Construcciones</title>
+    <meta name="description" content="Bambino Construcciones, especialistas en obras residenciales y comerciales." />
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="loader" id="loader">
+      <div class="loader__content">
+        <img class="loader__mark" src="images/logo.png" alt="Bambino Construcciones" />
+        <h1>Bambino Construcciones</h1>
+        <p>Construimos confianza, calidad y espacio.</p>
+      </div>
+    </div>
+
+    <header class="topbar">
+      <a class="brand" href="#inicio">
+        <img class="brand__mark" src="images/logo.png" alt="Bambino Construcciones" />
+        <span>Bambino Construcciones</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" id="siteNav" aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#empresa">Empresa</a>
+        <a href="#trabajos">Trabajos</a>
+        <a href="gallery.html">Galería</a>
+        <a href="shop.html">Tienda</a>
+      </nav>
+    </header>
+
+    <main id="inicio">
+      <section class="hero">
+        <div class="hero__copy">
+          <p class="eyebrow">Diseño, obra y ejecución</p>
+          <h2>Transformamos ideas en construcciones duraderas.</h2>
+          <p>
+            Somos un equipo enfocado en entregar proyectos con precisión, cumplimiento y estética para hogares, negocios y espacios que requieren una visión real.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="gallery.html">Ver galería</a>
+            <a class="button button--secondary" href="shop.html">Ver tienda</a>
+            <a class="button button--secondary" href="#redes">Redes sociales</a>
+          </div>
+        </div>  
+        <div class="hero__visual">
+          <img src="images/logo.png" alt="Ilustración de obra en construcción" />
+        </div>
+      </section>
+
+      <section class="section" id="empresa">
+        <div class="section__header">
+          <p class="eyebrow">Nuestra empresa</p>
+          <h3>Calidad que se ve, confianza que se siente.</h3>
+        </div>
+        <div class="about-grid">
+          <p>
+            Bambino Construcciones nace para ofrecer soluciones integrales en construcción con una mirada cercana, responsable y orientada a resultados. Nos encargamos de cada detalle para que cada proyecto sea funcional, moderno y resistente.
+          </p>
+          <p>
+            No solo nos dedicamos a la construcción o remodelación, también realizamos trabajos de carpintería, herrería y ofrecemos venta de herramientas para acompañar cada proyecto con calidad, practicidad y confianza.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section--cards" id="trabajos">
+        <div class="section__header">
+          <p class="eyebrow">Trabajos destacados</p>
+          <h3>Soluciones para cada etapa del proyecto</h3>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <h4>Obras residenciales</h4>
+            <p>Casas, ampliaciones y remodelaciones con diseño pensado para la vida diaria.</p>
+          </article>
+          <article class="card">
+            <h4>Espacios comerciales</h4>
+            <p>Proyectos funcionales y atractivos para negocios, oficinas y locales.</p>
+          </article>
+          <article class="card">
+            <h4>Detalles y terminaciones</h4>
+            <p>Acabados urbanos, trabajos de ingeniería y mejora de espacios existentes.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="galeria">
+        <div class="section__header section__header--row">
+          <div>
+            <p class="eyebrow">Galería</p>
+            <h3></h3>
+          </div>
+        </div>
+        <div class="gallery" id="gallery"></div>
+      </section>
+
+      <section class="section" id="redes">
+        <div class="section__header">
+          <p class="eyebrow">Redes sociales</p>
+          <h3>Seguinos y encontrá más de nuestro trabajo</h3>
+        </div>
+        <div class="social-grid">
+          <a class="social-card" href="https://www.instagram.com/bambinoconstrucciones?igsh=MXZoNmg5bmdkZ3l0eA==" target="_blank" rel="noopener noreferrer">
+            <span><img src="images/redes/insta.png" alt="Instagram" /></span>
+            <strong>Instagram</strong>
+            <p>Fotos y novedades de nuestros proyectos.</p>
+          </a>
+          <a class="social-card" href="https://www.facebook.com/share/194z9ZiRe2/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
+            <span><img src="images/redes/face.png" alt="Facebook" /></span>
+            <strong>Facebook</strong>
+            <p>Contenido de la empresa y actualizaciones.</p>
+          </a>
+          <a class="social-card" href="https://www.tiktok.com/@bambinoconstrucciones?_r=1&_t=ZS-97lHmlqKl4J" target="_blank" rel="noopener noreferrer">
+            <span><img src="images/redes/tiktok.png" alt="TikTok" /></span>
+            <strong>TikTok</strong>
+            <p>Videos cortos, procesos y trabajos en acción.</p>
+          </a>
+          <a class="social-card" href="https://wa.me/542281323926?text=Hola%2C%20quiero%20consultar%20por%20sus%20servicios." target="_blank" rel="noopener noreferrer">
+            <span><img src="images/redes/what.png" alt="WhatsApp" /></span>
+            <strong>WhatsApp</strong>
+            <p>Consultá por presupuestos o pedidos directos.</p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal" id="modal" hidden>
+      <button class="modal__close" id="closeModal" aria-label="Cerrar vista ampliada">×</button>
+      <img id="modalImage" alt="Vista ampliada de la imagen" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
